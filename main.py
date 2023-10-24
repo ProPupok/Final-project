@@ -41,6 +41,12 @@ class Main(tk.Frame):
 
         btn_search.pack(side = tk.LEFT)
 
+        # ОБНОВИТЬ
+        self.refresh_img = tk.PhotoImage(file='./img/refresh.png').subsample(7, 7)
+        btn_refresh = tk.Button(toolbar, bg='#d7d7d7', bd = 1, image = self.refresh_img, command = self.view_records)
+
+        btn_refresh.pack(side = tk.LEFT)
+
 # ТАБЛИЦА
 
         #Добавляем столбцы
